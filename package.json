@@ -1,6 +1,15 @@
 {
   "name": "vue3-spinbutton",
-  "version": "0.0.0",
+  "files": ["dist"],
+  "main": "./dist/spin-button.umd.js",
+  "module": "./dist/spin-button.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/spin-button.es.js",
+      "require": "./dist/spin-button.umd.js"
+    }
+  },
+  "version": "0.0.10",
   "scripts": {
     "dev": "vite --port 8081",
     "build": "vue-tsc --noEmit && vite build",
