@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const props = defineProps<{ start: number }>();
+const props = defineProps({
+  start: {
+    type: Number,
+    default: 0
+  }
+});
 
 const count = ref(props.start);
 </script>
