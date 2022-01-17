@@ -9,9 +9,9 @@ describe('SpinButton', () => {
     })
 
     it('should display label text', () => {
-        const start = 5
-        const wrapper = mount(SpinButton, { props: { start } })
+        const modelValue = 5
+        const wrapper = mount(SpinButton, { props: { modelValue } })
 
-        expect(wrapper.find('label').text()).toEqual(start.toString())
+        expect(wrapper.find('label').text()).toEqual(modelValue.toString())
     })
 })
