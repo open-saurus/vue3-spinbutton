@@ -10,7 +10,7 @@
       "require": "./dist/spin-button.umd.js"
     }
   },
-  "version": "0.0.15",
+  "version": "0.0.16",
   "scripts": {
     "dev": "vite --port 8081",
     "build": "vue-tsc --noEmit && vite build",
