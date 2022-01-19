@@ -8,5 +8,5 @@ const count = ref(0);
 </script>
 
 <template>
-  <SpinButton v-model="count" />
+  <SpinButton v-model="count" :step="2" />
 </template>
