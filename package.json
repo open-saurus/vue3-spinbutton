@@ -10,12 +10,13 @@
       "require": "./dist/spin-button.umd.js"
     }
   },
-  "version": "0.0.16",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite --port 8081",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "test": "jest src --coverage"
+    "test": "jest src --coverage",
+    "test:watch": "jest src --watch"
   },
   "dependencies": {},
   "peerDependencies": {

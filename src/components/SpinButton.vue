@@ -8,10 +8,14 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+  step: {
+    type: Number,
+    default: 1,
+  },
 });
 
-const increment = () => emit("update:modelValue", props.modelValue + 1);
-const decrement = () => emit("update:modelValue", props.modelValue - 1);
+const increment = () => emit("update:modelValue", props.modelValue + props.step);
+const decrement = () => emit("update:modelValue", props.modelValue - props.step);
 </script>
 
 <template>
